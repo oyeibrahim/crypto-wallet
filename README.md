@@ -8,5 +8,3 @@ Implemented using NodeJS, Express and EJS.
 Blockcypher and Infura API to access Bitcoin and Ethereum Blockchain
 
 You can check the bitcoin-sender, ethereum-sender and erc20-sender repo to know more about the send function
-
-Contact me: oyetunjiibrahim@gmail.com
