@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/sydewalka-logo.png">
+    <title>SydeWalKa Crypto Wallet App - Create New Wallet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <style>
+        .feature {
+            border: 2px solid grey;
+            border-radius: 5px;
+        }
+    </style>
+    <div class="container" style="margin-top:50px;">
+        <div>
+
+            <a href="/">Home</a>
+
+            <h2 class="text-center">
+                Here is your new <%= data.coin %> Wallet
+            </h2>
+
+            <hr>
+
+            <div class="">
+                <p>
+                    Make sure you copy the values and keep it savely
+                </p>
+            </div>
+
+            <div class="py-5">
+
+
+
+                <div class="col-md-6 p-2">
+                    <div class="feature p-2" style="overflow-x: scroll;">
+                        
+                        <p>
+                            Coin :
+                        </p>
+                        <p>
+                            <%= data.coin %> 
+                        </p>
+
+                        <hr>
+                        
+                        <p>
+                            Public Address :
+                        </p>
+                        <p>
+                            <%= data.address %> 
+                        </p>
+
+                        <hr>
+                        
+                        <p>
+                            Private Key :
+                        </p>
+                        <p>
+                            <%= data.private %> 
+                        </p>
+
+                        <% if (data.coin == "BTC") { %>
+
+                            <hr>
+                         
+                            <p>
+                                Public Key :
+                            </p>
+                            <p>
+                                <%= data.public %> 
+                            </p>
+
+                            <hr>
+                         
+                            <p>
+                                WIF :
+                            </p>
+                            <p>
+                                <%= data.wif %> 
+                            </p>
+
+                        <% } %>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <hr>
+
+            <div class="text-center mb-5">
+                <img class="img-fluid img-thumbnail" src="../assets/sydewalka-logo.png" alt="Sydewalka Logo">
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
